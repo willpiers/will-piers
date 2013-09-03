@@ -1,0 +1,133 @@
+<html>
+<head>
+	<title>Will Piers</title>
+	<script type="text/javascript" src="js/jQuery.js"></script>
+	<script type="text/javascript" src="js/coffee-compiler.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link href="http://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<div class="container">
+
+		<h1>Will Piers</h1>
+		<section class="row" id="about">
+			<img class="span2 offset2" src="https://1.gravatar.com/avatar/c3309720844349427aa0b66bab2901dc?d=https%3A%2F%2Fidenticons.github.com%2F247ef1f72d9c16d197f97c94fc3b14c1.png&s=420">
+			<p class="span6">
+				I am a web developer and math student originally from Boulder, Colorado. I like to play games (chess), write code, play basketball, and spend time with my friends, family, and chocolate lab.
+				<span class="nav">
+					<span id="nav-text">You can read about my work and my education below, or you can check out my <a href="#" id="show-projects">recent projects</a>.</span>
+
+					<span id="nav-text-2">You can read about my recent projects below, or you can check out my <a href="#" id="show-default-content">work and education</a>.</span>
+
+					Otherwise, you can find me lurking on
+					<a href="http://quora.com/will-piers" class="social quora-social">
+						Quora
+					</a>
+					and
+					<a href="http://github.com/willpiers" class="social github-social">
+						GitHub
+					</a>, and <em>re</em>tweeting from
+					<a href="https://twitter.com/willpiers" class="social twitter-social">
+						@willpiers
+					</a>
+				</span>
+			</p>
+		</section>
+
+		<section class="row"><hr class="span10 offset1"></section>
+
+		<div id="default-content">
+			<section class="row" id="rally">
+				<img class="span2 offset2" src="http://leansystemssociety.org/wp-content/uploads/2012/11/rally-logo-xlarge.png">
+				<p class="span6">
+					This past summer (2013) I spent most of my time working with the awesome people at Rally Software. As an intern, I was led by a mentor and worked with 4 other interns to build a new product for Rally. That product came to be known as <a href="https://waffle.io">waffle.io</a>, a light-weight agile project management tool built with developers in mind.
+				</p>
+			</section>
+
+			<section class="row"><hr class="span10 offset1"></section>
+
+			<section class="row" id="colorado-state">
+				<p class="span6 offset2">
+					Over the last few years, I've spent much of my time studying for and attending courses in the mathematics department. My performance has been recognized by way of the Dean's List. I will graduate this Spring (2014).
+				</p>
+				<img class="span2" src="http://www.engr.colostate.edu/~yzhangcn/Yang%20Zhang's%20Homepage_files/colorado_state_university_logo_green.png">
+			</section>
+
+			<section class="row"><hr class="span10 offset1"></section>
+
+			<section class="row" id="starter-league">
+				<div class="span2 offset2">
+					<img src="http://www.starterleague.com/assets/new-sl-logo.png">
+					<h4 class="tsl-text">The Starter League</h4>
+				</div>
+				<p class="span6">
+					Last Winter/Spring, I decided to leave college for a semester and travel to Chicago for a Ruby on Rails course put on by The Starter League. This is where I learned a great deal of the web development foundation that has carried me into the present.
+				</p>
+			</section>
+		</div>
+
+		<div id="projects">
+			<section class="row" id="waffle">
+				<h1><img src="https://waffle.io/images/navbar_logo.png">waffle<span>.io</span></h1>
+				<img class="span8 offset2" src="images/waffle.png">
+				<p class="span8 offset2 after-image">
+					This is <a href="https://waffle.io">waffle.io</a>, a light-weight project management tool for teams of developers. We started waffle with the vision of making open source projects run more smoothly, and letting possible contributors figure how to most effectively help. It is built with a mongodb/node.js backend and a backbone.js/chaplin frontend.
+				</p>
+			</section>
+
+			<section class="row"><hr class="span10 offset1"></section>
+
+			<section class="row" id="nag">
+				<h1><img src="http://www.startnagging.com/assets/naglogo-landing.png"></h1>
+				<p class="span8 offset2 before-image">
+					While attending The Starter League, a group of five other students and I formed a team to build a web application. Our vision turned into <a href="http://www.startnagging.com">nag.</a> Nag is a way to keep track of the things you've loaned to friends, as well as a way to remind them to return those things in a timely manner.
+				</p>
+
+				<img class="span2 offset2" src="images/nag.png">
+				<img class="span6" src="images/nag2.png" style="position: relative; bottom: -19px;">
+				<p class="span8 offset2 after-image">
+					We built Nag with Ruby on Rails, Sass, Haml, jQuery. As well, a core component of the appication is its integration with Facebook, meaning we worked pretty closely with the Facebook API. Check out <a href="https://github.com/lateplate/sl-demo-day">nag on Github.</a>
+				</p>
+			</section>
+
+			<section class="row"><hr class="span10 offset1"></section>
+
+			<section class="row">
+				<p class="span8 offset2">
+					Check out the rest of my open source work on <a href="http://github.com/willpiers" class="social github-social">
+						GitHub
+					</a>
+				</p>
+			</section>
+		</div>
+
+	</div>
+
+	<script type="text/coffeescript">
+		$('a').attr 'target', '_blank'
+		$('#projects').hide()
+		$('#nav-text-2').hide()
+	</script>
+
+	<script type="text/coffeescript">
+		$('#show-projects').on 'click' , ->
+			$('#default-content').fadeOut 300, ->
+				$('#projects').fadeIn 300
+				$('#nav-text').hide()
+				$('#nav-text-2').show()
+			return false
+		$('#show-default-content').on 'click' , ->
+			$('#projects').fadeOut 300, ->
+				$('#default-content').fadeIn 300
+				$('#nav-text-2').hide()
+				$('#nav-text').show()
+			return false
+	</script>
+
+</body>
+</html>
+
+
