@@ -8,6 +8,9 @@ h1 {
 	text-align: center;
 	margin: 20px auto;
 	clear: both;
+	font-size: 35px;
+	font-weight: 200;
+	color: #444;
 }
 span.nav {
 	clear: both;
@@ -67,4 +70,7 @@ p.before-image {
 }
 #nag h1 img {
 	width: 200px;
+}
+hr {
+	margin: 25px 0px;
 }
