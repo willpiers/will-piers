@@ -67,8 +67,7 @@ p.before-image {
 	color: #00809D;
 }
 #waffle h1 img {
-	position: relative;
-	top: 5px;
+	height: 50px;
 	margin-right: 10px;
 }
 #nag h1 img {
