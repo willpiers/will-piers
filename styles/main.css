@@ -18,6 +18,10 @@ span.nav {
 	text-align: left;
 	margin-top: 20px;
 }
+.row.career-step {
+  display: flex;
+  align-items: center;
+}
 p {
 	text-align: justify;
 	margin: 0px;
