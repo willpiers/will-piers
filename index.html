@@ -76,7 +76,7 @@
 				  <div class="content">
 					<header>
 					  <h2>2013 - 2014</h2>
-				      <a class="waffle" href="https://github.com/waffleio"><h1><img src="images/waffle_logo.png alt=" alt="Waffle.io logo">waffle<span>.io</span></h1></a>
+				      <a class="waffle" href="https://github.com/waffleio"><h1><img src="images/waffle_logo.png" alt="Waffle.io logo">waffle<span>.io</span></h1></a>
 					</header>
                     <p>During my last year in school and for over a year thereafter, I had the pleasure of working with the awesome people at Rally Software. Starting as an intern in 2013, I helped build a product called <a href="https://github.com/waffleio">waffle.io</a> with a few mentors and 4 other interns. waffle was a light-weight agile project management tool built with developers in mind. After moving on from the waffle team, I've spent the majority of my time learning and building with <a href="http://facebook.github.io/react">React.js</a> and <a href="http://facebook.github.io/flux">Flux</a>. I also attended the inaugural React.js conference in late January, 2015.</p>
 				  </div>
@@ -103,9 +103,9 @@
 		</div>
 
     <div id="projects">
-      <section class="row" id="techrepair">
+      <section class="project-row" id="techrepair">
         <h1><img src="images/celltech_banner.png"></h1>
-        <img src="images/techrepair.io.png" alt="techrepair.io">
+        <img class="project-image" src="images/techrepair.io.png" alt="techrepair.io">
         <p>
           <a href="http://willpiers.github.io/techrepair.io/">techrepair.io</a> is a React js project I built for a friend who runs a cell phone repair business. It was a lot of fun working with React, webpack, and react-router. In particular, webpack is a badass tool that lets me write less and es6 with no hassle. This is also the first project I've ever done where the mobile experience was a first class concern. I really enjoyed making it feel great on different sizes of devices, so go ahead and check it out on you phone or tablet!
         </p>
@@ -113,48 +113,50 @@
 
       <section><hr /></section>
 
-			<section id="minesweeper">
-				<h1>Minesweeper in React</h1>
-				<img src="images/react-minesweeper.png" alt="minesweeper in react js">
-				<p class="after-image">
-					This is a Minesweeper game I built with <a href='http://facebook.github.io/react/'>React js</a> and the flux architecture, both of which are awesome open source contributions from the engineers at Facebook. The application stores game information in local storage so it will remember the state of your game if you refresh the page. Check it out <a href="http://willpiers.github.io/react-minesweeper">here</a>
-				</p>
-			</section>
+	  <section class="project-row" id="minesweeper">
+	  	<h1>Minesweeper in React</h1>
+	  	<img class="project-image" src="images/react-minesweeper.png" alt="minesweeper in react js">
+	  	<p class="after-image">
+	  		This is a Minesweeper game I built with <a href='http://facebook.github.io/react/'>React js</a> and the flux architecture, both of which are awesome open source contributions from the engineers at Facebook. The application stores game information in local storage so it will remember the state of your game if you refresh the page. Check it out <a href="http://willpiers.github.io/react-minesweeper">here</a>
+	  	</p>
+	  </section>
 
-			<section><hr /></section>
+	  <section><hr /></section>
 
-			<section class="waffle">
-				<h1><img src="images/waffle_logo.png">waffle<span>.io</span></h1>
-				<img src="images/waffle.png" alt="waffle.io">
-				<p class="after-image">
-					This is <a href="https://waffle.io">waffle.io</a>, a light-weight project management tool for teams of developers. We started waffle with the vision of making open source projects run more smoothly, and letting possible contributors figure how to most effectively help. It is built with a mongodb/node.js backend and a backbone.js/chaplin frontend.
-				</p>
-			</section>
+	  <section class="project-row waffle">
+	  	<h1><img src="images/waffle_logo.png">waffle<span>.io</span></h1>
+	  	<img class="project-image" src="images/waffle.png" alt="waffle.io">
+	  	<p class="after-image">
+	  		This is <a href="https://waffle.io">waffle.io</a>, a light-weight project management tool for teams of developers. We started waffle with the vision of making open source projects run more smoothly, and letting possible contributors figure how to most effectively help. It is built with a mongodb/node.js backend and a backbone.js/chaplin frontend.
+	  	</p>
+	  </section>
 
-			<section><hr></section>
+	  <section><hr></section>
 
-			<section id="nag">
-				<h1><img src="images/naglogo-landing.png" alt="Nag"></h1>
-				<p class="before-image">
-					While attending The Starter League, a group of five other students and I formed a team to build a web application. Our vision turned into <a href="http://www.startnagging.com">nag.</a> Nag is a way to keep track of the things you've loaned to friends, as well as a way to remind them to return those things in a timely manner.
-				</p>
+	  <section class="project-row" id="nag">
+	  	<h1><img src="images/naglogo-landing.png" alt="Nag"></h1>
+	  	<p class="before-image">
+	  		While attending The Starter League, a group of five other students and I formed a team to build a web application. Our vision turned into <a href="http://www.startnagging.com">nag.</a> Nag is a way to keep track of the things you've loaned to friends, as well as a way to remind them to return those things in a timely manner.
+	  	</p>
 
-				<img src="images/nag.png" alt="Nag">
-				<img src="images/nag2.png" style="position: relative; bottom: -19px;" alt="Nag">
-				<p class="after-image">
-					We built Nag with Ruby on Rails, Sass, Haml, jQuery. As well, a core component of the appication is its integration with Facebook, meaning we worked pretty closely with the Facebook API. Check out <a href="https://github.com/lateplate/sl-demo-day">nag on Github.</a>
-				</p>
-			</section>
+		<div>
+	  	  <img class="tall-image" src="images/nag.png" alt="Nag">
+	  	  <img src="images/nag2.png" alt="Nag">
+		</div>
+	  	<p class="after-image">
+	  		We built Nag with Ruby on Rails, Sass, Haml, jQuery. As well, a core component of the appication is its integration with Facebook, meaning we worked pretty closely with the Facebook API. Check out <a href="https://github.com/lateplate/sl-demo-day">nag on Github.</a>
+	  	</p>
+	  </section>
 
-			<section class="row"><hr class="span10 offset1"></section>
+	  <section><hr /></section>
 
-			<section class="row">
-				<p class="span8 offset2">
-					Check out the rest of my open source work on <a href="http://github.com/willpiers" class="social github-social">
-						GitHub
-					</a>
-				</p>
-			</section>
+	  <section>
+	  	<p>
+	  		Check out the rest of my open source work on <a href="http://github.com/willpiers" class="social github-social">
+	  			GitHub
+	  		</a>
+	  	</p>
+	  </section>
 	</div>
 
 	</div>

@@ -33,11 +33,17 @@ body {
 	width: 200px;
 	border-radius: 10px;
 }
-img {
-	max-width: 200px;
-}
 #default-content {
 	width: 100%;
+}
+#default-content img {
+	max-width: 200px;
+}
+#projects img {
+	max-width: 350px;
+}
+#projects img.tall-image {
+	max-width: 150px;
 }
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -249,6 +255,12 @@ p.before-image {
 	font-weight: bold;
 	text-align: center;
 	line-height: 1.1em;
+}
+.project-row {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
 }
 .waffle h1 {
 	color: #00CAF8;
