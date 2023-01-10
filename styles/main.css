@@ -133,6 +133,8 @@ img {
 }
 .content header {
 	display: flex;
+	flex-direction: column;
+	gap: 20px;
 	align-items: center;
 	justify-content: space-evenly;
 }
@@ -176,11 +178,6 @@ img {
  	.right {
  		left: 0%;
     }
-    .content header {
-		flex-direction: column;
-    	gap: 20px;
-    	align-items: center;
-    }
     .content header h2 {
       margin: 0;
       font-weight: bolder;
@@ -191,7 +188,7 @@ img {
     }
 	img.profile-pic {
 		float: left;
-		padding: 10px;
+		margin: 10px 10px 10px 0;
 		border-radius: 20px;
 	}
 }
@@ -253,17 +250,17 @@ p.before-image {
 	text-align: center;
 	line-height: 1.1em;
 }
-#waffle h1 {
+.waffle h1 {
 	color: #00CAF8;
 	text-shadow: 1px 1px 1px #AAA;
 	font-weight: 500;
 	font-size: 50px;
 	line-height: 70px;
 }
-#waffle h1 span {
+.waffle h1 span {
 	color: #00809D;
 }
-#waffle h1 img {
+.waffle h1 img {
 	height: 50px;
 	margin-right: 10px;
 }
