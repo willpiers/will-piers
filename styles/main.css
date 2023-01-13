@@ -39,6 +39,9 @@ body {
 #default-content img {
 	max-width: 200px;
 }
+#default-content img.collage {
+	max-width: 300px;
+}
 #projects img {
 	max-width: 350px;
 }
